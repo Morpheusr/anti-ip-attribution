@@ -62,11 +62,11 @@ config:
     - DOMAIN,httpdns.baidubce.com
     # ======= 微信 ======= #
     # 微信通用
-    - DOMAIN,szshort.weixin.qq.com # 用途未知
-    - DOMAIN,szextshort.weixin.qq.com
-    - DOMAIN,szminorshort.weixin.qq.com
+    #- DOMAIN,szshort.weixin.qq.com # 用途未知
+    #- DOMAIN,szextshort.weixin.qq.com
+    #- DOMAIN,szminorshort.weixin.qq.com
     # 微信公众号评论
-    - DOMAIN,mp.weixin.qq.com # 微信公众号，不存在单独的API域名
+    #- DOMAIN,mp.weixin.qq.com # 微信公众号，不存在单独的API域名
     # 微信视频号评论
     # - DOMAIN,szshort.weixin.qq.com # 疑似微信视频号，用途未知
     # 无法确定准确的请求方式，建议全局代理
@@ -89,24 +89,24 @@ config:
     # 抖音
     # 请求域名过多，建议全局代理
     # 网友提供抖音IP定位接口
-    - DOMAIN-KEYWORD,core-c-lq
-    - DOMAIN-KEYWORD,core-lq
-    - DOMAIN-KEYWORD,normal-c-lq
-    - DOMAIN-KEYWORD,normal-lq
-    - DOMAIN-KEYWORD,search-quic-lq
-    - DOMAIN-KEYWORD,search-lq
+    #- DOMAIN-KEYWORD,core-c-lq
+    #- DOMAIN-KEYWORD,core-lq
+    #- DOMAIN-KEYWORD,normal-c-lq
+    #- DOMAIN-KEYWORD,normal-lq
+    #- DOMAIN-KEYWORD,search-quic-lq
+    #- DOMAIN-KEYWORD,search-lq
     # Update #32
     # Append
     # https://github.com/lwd-temp/anti-ip-attribution/issues/33#issuecomment-1421094069
     # - DOMAIN-KEYWORD,-normal-
-    - DOMAIN-SUFFIX,zijieapi.com,DIRECT
-    - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
-    - DOMAIN-KEYWORD,-normal-hl
-    - DOMAIN-KEYWORD,-normal-c-hl
-    - DOMAIN-KEYWORD,-core-c-hl
-    - DOMAIN-KEYWORD,-normal-lf
-    - DOMAIN-KEYWORD,-normal-c-lf
-    - DOMAIN-KEYWORD,-core-c-lf
+    #- DOMAIN-SUFFIX,zijieapi.com,DIRECT
+    #- DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+    #- DOMAIN-KEYWORD,-normal-hl
+    #- DOMAIN-KEYWORD,-normal-c-hl
+    #- DOMAIN-KEYWORD,-core-c-hl
+    #- DOMAIN-KEYWORD,-normal-lf
+    #- DOMAIN-KEYWORD,-normal-c-lf
+    #- DOMAIN-KEYWORD,-core-c-lf
     # - DOMAIN-KEYWORD,-core-
     # - DOMAIN-KEYWORD,-misc-
     # - DOMAIN-KEYWORD,-search-
@@ -130,53 +130,53 @@ config:
     # - DOMAIN-SUFFIX,ibytedapm.com # CDN
     # - DOMAIN-SUFFIX,yhgfb-cn-static.com # CDN
     # P.S. 抖音适用于PC的Web版API非常明确
-    - DOMAIN,sso.douyin.com # 登录
-    - DOMAIN,www.douyin.com # Web版PC端
-    - DOMAIN-SUFFIX,snssdk.com # API域名
+    #- DOMAIN,sso.douyin.com # 登录
+    #- DOMAIN,www.douyin.com # Web版PC端
+    #- DOMAIN-SUFFIX,snssdk.com # API域名
     # ======= 头条 ======= #
     # 网友提供头条IP定位接口
-    - DOMAIN-SUFFIX,toutiaoapi.com
+    #- DOMAIN-SUFFIX,toutiaoapi.com
     # ======= 快手 ======= #
     # issue#3 提供
     # 个人主页似乎有延迟，未测试
     # 一个域名连不上会请求另一个，两个同时使用就会生效了
-    - DOMAIN-SUFFIX,gifshow.com
-    - DOMAIN-SUFFIX,ksapisrv.com
+    #- DOMAIN-SUFFIX,gifshow.com
+    #- DOMAIN-SUFFIX,ksapisrv.com
     # ======= 小红书 ======= #
     # issue#4 提供
-    - DOMAIN-SUFFIX,xiaohongshu.com
+    #- DOMAIN-SUFFIX,xiaohongshu.com
     # ======= 其乐论坛 ======= #
     # issue#11 提供
-    - DOMAIN,keylol.com # 评论区
+    #- DOMAIN,keylol.com # 评论区
     # ======= 西瓜视频 ======= #
     # issue#10 提供
-    - DOMAIN-SUFFIX,ixigua.com # 可以阻止真实ip显示，但无法显示代理ip
+    #- DOMAIN-SUFFIX,ixigua.com # 可以阻止真实ip显示，但无法显示代理ip
     # ======= 文叔叔 ======= #
     # DoingDog/anti-ip-attribution
-    - DOMAIN,www.wenshushu.cn
+    #- DOMAIN,www.wenshushu.cn
     # ======= 豆瓣 ======= #
     # issue#14提供
     # iOS客户端
     # 目前无法可靠地处理iOS端的请求，建议全局代理
-    - IP-CIDR,119.29.29.98/32,REJECT
-    - DOMAIN,frodo.douban.com
+    #- IP-CIDR,119.29.29.98/32,REJECT
+    #- DOMAIN,frodo.douban.com
     # 网页端
-    - DOMAIN,www.douban.com
+    #- DOMAIN,www.douban.com
     # ======= 酷安 ======= #
     # issue#15提供
     - DOMAIN,api.coolapk.com
     # ======= TapTap ======= #
     # issue#16提供
-    - DOMAIN,api.taptapdada.com
+    #- DOMAIN,api.taptapdada.com
     # ======= 网易大神 ======= #
     # issue#17提供
-    - DOMAIN,god.gameyw.netease.com
+    #- DOMAIN,god.gameyw.netease.com
     # ======= 虎牙 ======= #
     # issue#17提供
-    - DOMAIN-SUFFIX,huya.com
+    #- DOMAIN-SUFFIX,huya.com
     # ======= 懂球帝 ======= #
     # issue#18提供
-    - DOMAIN-SUFFIX,dongqiudi.com
+    #- DOMAIN-SUFFIX,dongqiudi.com
     # ======= NGA ======= #
     # issue#19提供
     # 个人主页ip。开代理以后发一个评论就会变代理ip
@@ -229,28 +229,28 @@ config:
     # ======= 斗鱼 ======= #
     # https://github.com/lwd-temp/anti-ip-attribution/issues/23
     # direct斗鱼直播流 https://github.com/wbt5/real-url/issues/340
-    - DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,vplay1a.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,vplay3a.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,ws-tct.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,hls3-akm.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,hlsa-akm.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,hls1a-akm.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,hls3a-akm.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,vplay1a.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,vplay3a.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,ws-tct.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,akm-tct.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,tx2play1.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,tc-tct1.douyucdn.cn,DIRECT
     #direct弹幕
-    - DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
-    - DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
+    #- DOMAIN-SUFFIX,wsproxy.douyu.com,DIRECT
+    #- DOMAIN-SUFFIX,danmuproxy.douyu.com,DIRECT
     #direct图片
-    - DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
-    - DOMAIN-SUFFIX,douyucdn.cn
-    - DOMAIN-SUFFIX,douyu.com
+    #- DOMAIN-SUFFIX,img.douyucdn.cn,DIRECT
+    #- DOMAIN-SUFFIX,douyucdn.cn
+    #- DOMAIN-SUFFIX,douyu.com
     # ======= 米游社 ======= #
-    - DOMAIN,bbs-api.mihoyo.com
+    #- DOMAIN,bbs-api.mihoyo.com
     # https://github.com/lwd-temp/anti-ip-attribution/issues/39
     # 米游社主域名已从 bbs.mihoyo.com 302至 miyoushe.com
-    - DOMAIN,bbs-api.miyoushe.com
+    #- DOMAIN,bbs-api.miyoushe.com
     # - DOMAIN,api-takumi.mihoyo.com
     # - DOMAIN,log-upload.mihoyo.com
     # ======= MIUI ======= #
@@ -270,11 +270,11 @@ config:
     # ======= 豆瓣 ======= #
     # https://github.com/lwd-temp/anti-ip-attribution/issues/37
     # IOS APP实测有效，其余设备不保证，doubanio.com的域名是加载图片的，实测直连不影响地区
-    - DOMAIN-SUFFIX,douban.com
-    - IP-CIDR,49.233.242.15/32
-    - IP-CIDR,81.70.124.99/32
-    - IP-CIDR,81.70.125.19/32
-    - IP-CIDR,140.143.177.206/32
+    #- DOMAIN-SUFFIX,douban.com
+    #- IP-CIDR,49.233.242.15/32
+    #- IP-CIDR,81.70.124.99/32
+    #- IP-CIDR,81.70.125.19/32
+    #- IP-CIDR,140.143.177.206/32
     # ======= 小黑盒 ======= #
     # 小黑盒主域名，包括文章之类（图片CDN等静态资源不在此域名范围内）
     # https://github.com/lwd-temp/anti-ip-attribution/issues/39
